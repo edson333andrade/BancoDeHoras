@@ -18,54 +18,87 @@
 
 <resources>
 
-    <style name="Theme.Bancodehoras" parent="@Theme.Sherlock.Light">
+    <style name="Theme.Bancodehoras" parent="@style/Theme.Sherlock.Light">
         <item name="actionBarItemBackground">@drawable/selectable_background_bancodehoras</item>
-
-
+        <item name="popupMenuStyle">@style/PopupMenu.Bancodehoras</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Bancodehoras</item>
         <item name="actionBarTabStyle">@style/ActionBarTabStyle.Bancodehoras</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Bancodehoras</item>
         <item name="actionBarStyle">@style/ActionBar.Solid.Bancodehoras</item>
         <item name="actionModeBackground">@drawable/cab_background_top_bancodehoras</item>
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_bancodehoras</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bancodehoras</item>
-
-<!--     <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item> -->
-		<item name="android:actionBarItemBackground">@drawable/selectable_background_bancodehoras</item>
+        
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_bancodehoras</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bancodehoras</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bancodehoras</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Bancodehoras</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Bancodehoras</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Bancodehoras</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_bancodehoras</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_bancodehoras</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bancodehoras</item>
-
     </style>
 
-    <style name="ActionBar.Solid.Bancodehoras" parent="@Widget.Sherlock.Light.ActionBar.Solid">
+    <style name="ActionBar.Solid.Bancodehoras" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
         <item name="background">@drawable/ab_solid_bancodehoras</item>
         <item name="backgroundStacked">@drawable/ab_stacked_solid_bancodehoras</item>
         <item name="backgroundSplit">@drawable/ab_bottom_solid_bancodehoras</item>
-		<!--          -->
+        <item name="progressBarStyle">@style/ProgressBar.Bancodehoras</item>
+        
         <item name="android:background">@drawable/ab_solid_bancodehoras</item>
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bancodehoras</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bancodehoras</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bancodehoras</item>
     </style>
 
-    <style name="ActionBar.Transparent.Bancodehoras" parent="@Widget.Sherlock.Light.ActionBar">
+    <style name="ActionBar.Transparent.Bancodehoras" parent="@style/Widget.Sherlock.Light.ActionBar">
         <item name="background">@drawable/ab_transparent_bancodehoras</item>
-        <!--          -->
+        <item name="progressBarStyle">@style/ProgressBar.Bancodehoras</item>
+        
         <item name="android:background">@drawable/ab_transparent_bancodehoras</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bancodehoras</item>
     </style>
 
-    <style name="ActionBarTabStyle.Bancodehoras" parent="@Widget.Sherlock.Light.ActionBar.TabView">
+    <style name="PopupMenu.Bancodehoras" parent="@style/Widget.Sherlock.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bancodehoras</item>	
+    </style>
+
+    <style name="DropDownListView.Bancodehoras" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_bancodehoras</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Bancodehoras" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
         <item name="background">@drawable/tab_indicator_ab_bancodehoras</item>
-        <!--          -->
+        
         <item name="android:background">@drawable/tab_indicator_ab_bancodehoras</item>
     </style>
+
+    <style name="DropDownNav.Bancodehoras" parent="@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="background">@drawable/spinner_background_ab_bancodehoras</item>
+        
+        <item name="android:background">@drawable/spinner_background_ab_bancodehoras</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bancodehoras</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bancodehoras</item>
+    </style>
     
-    <style name="ActionButton.CloseMode.Bancodehoras" parent="@Widget.Sherlock.Light.ActionButton.CloseMode">
+    <style name="ProgressBar.Bancodehoras" parent="@style/Widget.Sherlock.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bancodehoras</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Bancodehoras" parent="@style/Widget.Sherlock.Light.ActionButton.CloseMode">
         <item name="background">@drawable/btn_cab_done_bancodehoras</item>
-        <!--          -->
+        
         <item name="android:background">@drawable/btn_cab_done_bancodehoras</item>
     </style>
 
- 
+<!--     this style is only referenced in a Light.DarkActionBar based theme -->
+<!--     <style name="Theme.Bancodehoras.Widget" parent="@style/Theme.Sherlock"> -->
+<!--         <item name="popupMenuStyle">@style/PopupMenu.Bancodehoras</item> -->
+<!--         <item name="dropDownListViewStyle">@style/DropDownListView.Bancodehoras</item> -->
+        
+<!--         <item name="android:popupMenuStyle">@style/PopupMenu.Bancodehoras</item> -->
+<!--         <item name="android:dropDownListViewStyle">@style/DropDownListView.Bancodehoras</item> -->
+<!--     </style> -->
 
 </resources>
