@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/item_list"
-        android:name="com.xgxzatx.bancodehoras.ItemListFragment"
+        android:name="com.xgxzatx.bancodehoras.fragment.ItemListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
